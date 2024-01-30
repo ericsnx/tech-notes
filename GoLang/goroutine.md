@@ -6,6 +6,8 @@ Here's a basic overview of how goroutines work:
 You create a goroutine using the `go` keyword followed by a function call or an anonymous function:
 
 ```go
+package main
+
 func myFunc() {
     // Your code here
 }
@@ -57,6 +59,10 @@ In the example above, `printNumbers` and the loop in `main` run concurrently. Yo
 Communication between goroutines is achieved through channels (`chan`), enabling safe data exchange.
 
 ```go
+package main
+
+import "fmt"
+
 func main() {
     ch := make(chan int)
 
